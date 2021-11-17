@@ -9,3 +9,6 @@ By considering the terms in the Fibonacci sequence whose values do not exceed fo
 
 ## 3. Largest prime factor
 What is the largest prime factor of the number 600851475143 ?
+
+## 4. Largest palindrome product
+Find the largest palindrome made from the product of two 3-digit numbers.

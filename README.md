@@ -12,3 +12,6 @@ What is the largest prime factor of the number 600851475143 ?
 
 ## 4. Largest palindrome product
 Find the largest palindrome made from the product of two 3-digit numbers.
+
+## 5. Smallest multiple
+What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?

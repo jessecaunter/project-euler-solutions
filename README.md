@@ -1,6 +1,8 @@
 # Project Euler Solutions
 This repository contains a collection of Python programs I've written to solve problems on Project Euler.
 
+The challenge is for each algorithm to be efficient enough that is solves the problem in less than one minute.
+
 ## 1. Multiples of 3 or 5
 Find the sum of all multiples of 3 or 5 below 1,000
 

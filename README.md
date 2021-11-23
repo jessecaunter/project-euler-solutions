@@ -23,3 +23,6 @@ Find the difference between the sum of the squares of the first one hundred natu
 
 ## 7. 10001st prime
 What is the 10,001st prime number?
+
+## 8. Largest product in a series
+Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?

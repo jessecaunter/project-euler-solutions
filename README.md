@@ -26,3 +26,8 @@ What is the 10,001st prime number?
 
 ## 8. Largest product in a series
 Find the thirteen adjacent digits in the 1000-digit number that have the greatest product. What is the value of this product?
+
+## 9. Special Pythagorean triplet
+A Pythagorean triplet is a set of three natural numbers, *a < b < c*, for which,
+    a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>
+There exists exactly one Pythagorean triplet for which *a + b + c = 1000*. Find the product *abc*.

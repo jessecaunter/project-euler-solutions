@@ -9,6 +9,10 @@ def add_to_sum(num):
     global sum 
     sum += num
 
+# No need to check whether num is divisible by every int between 2 and itself
+# We only need to iterate over the range between 2 and the square root of num
+# This will cover all the factors greater than square root
+# Algorithm will be exponentially more efficient due to far less iterations
 def check_prime(num):
     sq_rt = math.sqrt(num)
     i = 2

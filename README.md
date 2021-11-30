@@ -32,3 +32,6 @@ A Pythagorean triplet is a set of three natural numbers, *a < b < c*, for which,
     a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup><br>
 There exists exactly one Pythagorean triplet for which *a + b + c = 1000*.<br>
 Find the product *abc*.
+
+## 10. Summation of primes
+Find the sum of all primes below two million.

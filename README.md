@@ -35,3 +35,7 @@ Find the product *abc*.
 
 ## 10. Summation of primes
 Find the sum of all primes below two million.
+
+## 11. Largest product in a grid
+Given a 20x20 grid of numbers, what is the greatest product of four adjacent numbers in the same direction 
+(up, down, left, right, or diagonally)?

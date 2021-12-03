@@ -48,14 +48,14 @@ data = [
     "01 70 54 71 83 51 54 69 16 92 33 48 61 43 52 01 89 19 67 48"
 ]
 
-# Split each row into a sublist
+# Split each row into a nested list so that individual numbers can be accessed
 for i in range(len(data)):
     data[i] = data[i].split()
 
-# THIS APPROACH WOULD CONTAIN A LOT OF UNECCESSARY ITERATIONS:
-# Now for each number we need to calculate the product of itself and the
-# three adjacent numbers in each direction
-# After figuring out the greatest of these products, we need to compare it 
+# THE FOLLOWING APPROACH WOULD CONTAIN A LOT OF UNECCESSARY ITERATIONS:
+# For each number we could calculate the product of itself and the
+# three adjacent numbers radiating out in each direction
+# After figuring out the greatest of these products, we could compare it 
 # with the current highest product and assign a new value if necessary
 
 # THIS APPROACH SHOULD BE QUICKER AND MORE EFFICIENT:
@@ -63,7 +63,8 @@ for i in range(len(data)):
 # replacing the global variable if a higher product is found.
 # Next do the same for each column.
 # Then the same for numbers diagonally down and to the right
-# And finally for numbers diagonally up and to the right
+# And finally for numbers diagonally down and to the left
+
 highest_product = 0
 
 # Loop through rows
@@ -71,8 +72,7 @@ for row in data:
     for i in range(len(row) - 3):
         product = int(row[i]) * int(row[i + 1]) * int(row[i + 2]) * int(row[i + 3])
         if product > highest_product:
-            print(row[i], row[i + 1], row[i + 2], row[i + 3])
-            print(product, "is higher than", highest_product)
+            # print(row[i], row[i + 1], row[i + 2], row[i + 3])
             highest_product = product
 
 # Loop through columns
@@ -80,9 +80,23 @@ for column in range(len(data[0])):
     for i in range(len(data) - 3):
         product = int(data[i][column]) * int(data[i + 1][column]) * int(data[i + 2][column]) * int(data[i + 3][column])
         if product > highest_product:
-            print(data[i][column], data[i + 1][column], data[i + 2][column], data[i + 3][column])
-            print(product, "is higher than", highest_product)
+            # print(data[i][column], data[i + 1][column], data[i + 2][column], data[i + 3][column])
             highest_product = product
 
+# Loop through diagonals (down and right)
+for row in range(len(data) - 3):
+    for i in range(len(data) - 3):
+        product = int(data[row][i]) * int(data[row + 1][i + 1]) * int(data[row + 2][i + 2]) * int(data[row + 3][i + 3])
+        if product > highest_product:
+            # print(data[row][i], data[row + 1][i + 1], data[row + 2][i + 2], data[row + 3][i + 3])
+            highest_product = product
+
+# Loop through diagonals (down and left)
+for row in range(len(data) - 3):
+    for i in range(3, len(data)):
+        product = int(data[row][i]) * int(data[row + 1][i - 1]) * int(data[row + 2][i - 2]) * int(data[row + 3][i - 3])
+        if product > highest_product:
+            # print(data[row][i], data[row + 1][i - 1], data[row + 2][i - 2], data[row + 3][i - 3])
+            highest_product = product
 
 print("Highest product:", highest_product)

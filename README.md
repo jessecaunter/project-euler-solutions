@@ -46,3 +46,6 @@ For example, the 7th triangle number would be:<br>
     1 + 2 + 3 + 4 + 5 + 6 + 7 = 28 <br>
 This is the first triangle number to have over five divisors (1, 2, 4, 7, 14, 28).<br>
 What is the value of the first triangle number to have over five hundred divisors?
+
+## 13. Large sum
+Work out the first ten digits of the sum of a given one-hundred 50-digit numbers.
